@@ -4,7 +4,10 @@ class Person:
     self.lastName = lastName
     self.emailId = firstName.lower() + '.' + lastName.lower() + '@' + 'company.org'
 
-p1 = Person("Alex", "Carry")
+firstName = input("First name: ")
+lastName = input("Last name: ")
+
+p1 = Person(firstName, lastName)
 
 print(p1.firstName)
 print(p1.lastName)
